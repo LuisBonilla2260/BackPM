@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite - Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 180px; /* Ajusta el tamaño según tu logo */
+            height: auto;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #ff5252;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 15px;
+            color: #777;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <!-- Reemplaza esta línea con tu logo -->
+    <div class="logo">
+        <img src="quickbite-logo.png" alt="QuickBite Logo" width="180">
+    </div>
+    <h2>Toma de Pedidos</h2>
+    <form action="/auth/login" method="POST">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</div>
+</body>
+</html>
